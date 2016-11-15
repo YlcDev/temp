@@ -1,21 +1,9 @@
 ProjectBundle\Entity\User:
     type: entity
-    table: null
-    repositoryClass: ProjectBundle\Repository\UserRepository
+    table: fos_user
     id:
         id:
             type: integer
             id: true
             generator:
                 strategy: AUTO
-    fields:
-        name:
-            type: string
-            length: 255
-        pass:
-            type: string
-            length: 255
-        mail:
-            type: string
-            length: 255
-    lifecycleCallbacks: {  }
