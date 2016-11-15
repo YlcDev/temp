@@ -1,7 +1,15 @@
 project_alpha:
     resource: "@ProjectBundle/Resources/config/routing/alpha.yml"
-    prefix:   /alpha
+    prefix:   /
 
 project_homepage:
     path:     /
-    defaults: { _controller: ProjectBundle:Default:index }
+    defaults: { _controller: ProjectBundle:Alpha:index }
+
+project_login:
+    resource: "@ProjectBundle/Resources/config/routing/alpha.yml"
+    prefix:   /login
+
+project_register:
+    resource: "@ProjectBundle/Resources/config/routing/alpha.yml"
+    prefix:   /register
