@@ -1,0 +1,23 @@
+ProjectBundle\Entity\Alpha:
+    type: entity
+    table: null
+    repositoryClass: ProjectBundle\Repository\AlphaRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        name:
+            type: string
+            length: 255
+        street:
+            type: string
+            length: 255
+        zipcode:
+            type: integer
+        city:
+            type: string
+            length: 255
+    lifecycleCallbacks: {  }

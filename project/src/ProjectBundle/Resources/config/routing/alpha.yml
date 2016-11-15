@@ -1,0 +1,24 @@
+alpha_index:
+    path:     /
+    defaults: { _controller: "ProjectBundle:Alpha:index" }
+    methods:  GET
+
+alpha_show:
+    path:     /{id}/show
+    defaults: { _controller: "ProjectBundle:Alpha:show" }
+    methods:  GET
+
+alpha_new:
+    path:     /new
+    defaults: { _controller: "ProjectBundle:Alpha:new" }
+    methods:  [GET, POST]
+
+alpha_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "ProjectBundle:Alpha:edit" }
+    methods:  [GET, POST]
+
+alpha_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "ProjectBundle:Alpha:delete" }
+    methods:  DELETE
