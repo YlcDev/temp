@@ -4,7 +4,7 @@ project_alpha:
 
 project_homepage:
     path:     /
-    defaults: { _controller: ProjectBundle:Alpha:index }
+    defaults: { _controller: ProjectBundle:Alpha:index}
 
 project_login:
     resource: "@ProjectBundle/Resources/config/routing/alpha.yml"
@@ -13,3 +13,7 @@ project_login:
 project_register:
     resource: "@ProjectBundle/Resources/config/routing/alpha.yml"
     prefix:   /register
+
+project_logout:
+    resource: "@ProjectBundle/Resources/config/routing/alpha.yml"
+    prefix:   /logout

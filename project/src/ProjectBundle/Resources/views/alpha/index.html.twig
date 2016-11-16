@@ -1,10 +1,14 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <h1>Alphas list</h1>
 
-    <table>
-        <thead>
+
+    <section class="container">
+        <br/>
+        <h1>Alphas list</h1>
+        <br/>
+        <table>
+            <thead>
             <tr>
                 <th>Id</th>
                 <th>Name</th>
@@ -13,33 +17,33 @@
                 <th>City</th>
                 <th>Actions</th>
             </tr>
-        </thead>
-        <tbody>
-        {% for alpha in alphas %}
-            <tr>
-                <td><a href="{{ path('alpha_show', { 'id': alpha.id }) }}">{{ alpha.id }}</a></td>
-                <td>{{ alpha.name }}</td>
-                <td>{{ alpha.street }}</td>
-                <td>{{ alpha.zipcode }}</td>
-                <td>{{ alpha.city }}</td>
-                <td>
-                    <ul>
-                        <li>
-                            <a href="{{ path('alpha_show', { 'id': alpha.id }) }}">show</a>
-                        </li>
-                        <li>
-                            <a href="{{ path('alpha_edit', { 'id': alpha.id }) }}">edit</a>
-                        </li>
-                    </ul>
-                </td>
-            </tr>
-        {% endfor %}
-        </tbody>
-    </table>
-
-    <ul>
-        <li>
-            <a href="{{ path('alpha_new') }}">Create a new alpha</a>
-        </li>
-    </ul>
+            </thead>
+            <tbody>
+            {% for alpha in alphas %}
+                <tr>
+                    {#<td><a href="{{ path('alpha_show', { 'id': alpha.id }) }}">{{ alpha.id }}</a></td>#}
+                    <td>{{ alpha.name }}</td>
+                    <td>{{ alpha.street }}</td>
+                    <td>{{ alpha.zipcode }}</td>
+                    <td>{{ alpha.city }}</td>
+                    <td>
+                        {#<ul>#}
+                        {#<li>#}
+                        {#<a href="{{ path('alpha_show', { 'id': alpha.id }) }}">show</a>#}
+                        {#</li>#}
+                        {#<li>#}
+                        {#<a href="{{ path('alpha_edit', { 'id': alpha.id }) }}">edit</a>#}
+                        {#</li>#}
+                        {#</ul>#}
+                    </td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </section>
+    {#<ul>#}
+    {#<li>#}
+    {#<a href="{{ path('alpha_new') }}">Create a new alpha</a>#}
+    {#</li>#}
+    {#</ul>#}
 {% endblock %}
